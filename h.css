@@ -1,0 +1,63 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+@keyframes heart{
+  0%{width: 400px;}
+  50%{width: 550px;}
+  100%{width: 400px;}
+}
+img{
+  width:400px;
+  animation-name: heart;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.text{
+  position: absolute;
+  bottom: 270px;
+  left: 470px;
+  font-size: 1.6rem;
+}
+@media screen and (max-width : 600px){
+  img{
+    width:340px;
+    animation-name: heart;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .text{
+    position: absolute;
+    bottom: 428px;
+    left: 98px;
+    font-size: 1.2rem;
+    font: bold;
+  }
+  @keyframes heart{
+    0%{width: 300px;}
+    50%{width: 450px;}
+    100%{width: 300px;}
+  }
+}
+@media screen and (max-width : 375px){
+  img{
+    width:340px;
+    animation-name: heart;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .text{
+    position: absolute;
+    bottom: 340px;
+    left: 80px;
+    font-size: 1.2rem;
+    font: bold;
+  }
+  @keyframes heart{
+    0%{width: 300px;}
+    50%{width: 400px;}
+    100%{width: 300px;}
+  }
+}
